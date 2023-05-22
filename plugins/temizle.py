@@ -34,7 +34,7 @@ async def dosyasil(dosyaYolu, message, silinecekler):
                                 textim = f"{dosyaYolu}"
                                 silinecekler.append(textim)
                             else:
-                                await message.reply_text("Silemiyom aq..")
+                                await message.reply_text("Silemiyorum...")
         except Exception as hata:
             await message.reply_text(hata)
 
@@ -57,8 +57,8 @@ async def deldirecttory(bot, message):
         for sil in silinecekler:
             await message.reply_text(sil)
             os.remove(sil)
-        await msg.edit(f"Dosyaları Başarıyla Silindi..")
-        await message.reply_text("Şimdi Botu Resetliyorum..")
+        await msg.edit(f"Dosyaları Başarıyla Silindi..✅")
+        await message.reply_text("Şimdi Botu Resetliyorum..♻️")
         try:
             os.execl(executable, executable, "bot.py")
         except Exception as e:
