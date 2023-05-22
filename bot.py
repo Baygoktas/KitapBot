@@ -36,14 +36,14 @@ class Bot(Client):
         LOGGER.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}. Premium {me.is_premium}.")
         if OWNER_ID != 0:
             try:
-                await self.send_message(text="Karanlığın küllerinden yeniden doğdum.",
+                await self.send_message(text="Karanlığın küllerinden yeniden doğdum 🛐.",
                     chat_id=OWNER_ID)
             except Exception as t:
                 LOGGER.error(str(t))
 
     async def stop(self, *args):
         if OWNER_ID != 0:
-            texto = f"Son nefesimi verdim.\nÖldüğümde yaşım: {ReadableTime(time.time() - botStartTime)}"
+            texto = f"Son nefesimi verdim 💀.\nÖldüğümde yaşım 📅: {ReadableTime(time.time() - botStartTime)}"
             try:
                 if SEND_LOGS_WHEN_DYING:
                     await self.send_document(document='log.txt', caption=texto, chat_id=OWNER_ID)
