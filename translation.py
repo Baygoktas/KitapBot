@@ -1,9 +1,9 @@
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 class Translation(object):
-    START_TEXT = """Merhaba {},\n
+    START_TEXT = """Merhaba 🙋🏻{},\n
 Ben bir URL Yükleyicisiyim!
-Bu Botu kullanarak HTTP/HTTPS bağlantılarını yükleyebilirsiniz!"""
+Bu Botu kullanarak Tiktok Youtube ve İnstagram bağlantılarını yükleyebilirsiniz!"""
     FORCE_TXT = """
 **Sadece kanal aboneleri kullanabilir.**
 (__Katıldıktan sonra tekrar deneyin.__)
@@ -23,8 +23,8 @@ __(Şifreyi bilmiyor musunuz? Bilmecede saklı!..)__
     RCHD_TG_API_LIMIT = "{} saniye içinde İndirildi.\nAlgılanan Dosya Boyutu: {}\nÜzgünüm. Ancak, Telegram API sınırlamaları nedeniyle 2000MB'den büyük dosyaları yükleyemiyorum."
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "{} saniye içinde İndirildi.\n{} saniye içinde yüklendi."
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS_PRE = "{} saniye içinde İndirildi.\n{} saniye içinde yüklendi.\n\nDosyan 2 Gb'tan büyük olduğu için PRE_LOG Değişkenine girdiğin kanalda!"
-    SAVED_CUSTOM_THUMB_NAIL = "**✔️ Kapak fotoğrafı kaydedildi.**"
-    DEL_ETED_CUSTOM_THUMB_NAIL = "**🗑️ Kapak fotoğrafı başarıyla temizlendi.**"
+    SAVED_CUSTOM_THUMB_NAIL = "**✅ Kapak fotoğrafı kaydedildi.**"
+    DEL_ETED_CUSTOM_THUMB_NAIL = "**🚮 Kapak fotoğrafı başarıyla temizlendi.**"
     CUSTOM_CAPTION_UL_FILE = "{}"
     NO_VOID_FORMAT_FOUND = "**YT-DLP**:\n{}"
     SETTINGS = "**Ayarlarlarınızı buradan yapabilirsiniz.**"
@@ -35,7 +35,7 @@ __(Şifreyi bilmiyor musunuz? Bilmecede saklı!..)__
 3. Buton ⏹️ seçin.
 Bot 🤖 cevap vermediyse @baygoktasofficial ile iletişime geçin"""
     UPLOADER = ""
-    THUMBNAIL_TEXT = "Thumbnail ayarlamak için bana herhangi bir fotoğraf gönderin."
+    THUMBNAIL_TEXT = "Kapak resmi ayarlamak için bana herhangi bir fotoğraf gönderin."
     IFLONG_FILE_NAME = """Telegram tarafından izin verilen dosya adı sınırı {alimit} karakterdir.\n\nBana verilen dosya adında {num} karakter var.\nLütfen dosya adınızı kısaltın ve tekrar deneyin!"""
     SLOW_URL_DECED = "Bu url çok yavaş dostum"
 
