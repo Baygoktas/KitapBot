@@ -37,7 +37,7 @@ async def delete_thumbnail(c: Client, m: "types.Message"):
     await m.reply_text(
         Translation.DEL_ETED_CUSTOM_THUMB_NAIL,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("⚙ Ayarlar", callback_data="Settings")]
+            [InlineKeyboardButton("⚙️ Ayarlar ⚙️", callback_data="Settings")]
         ])
     )
 
@@ -57,7 +57,7 @@ async def show_thumbnail(c: Client, m: "types.Message"):
             photo=thumbnail,
             caption=f"**Ayarlı Thumbnail.**",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("🗑️ Sil", callback_data="deleteThumbnail")]]
+                [[InlineKeyboardButton("🚮 Sil 🚮", callback_data="deleteThumbnail")]]
             ),
             reply_to_message_id=m.id)
     else:
