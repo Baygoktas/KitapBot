@@ -32,10 +32,10 @@ async def read_stdera(start, send_message, process, update):
                 #Progress bar logic
                 now = time.time()
                 diff = start-now
-                text = 'İLERLEME\n'
-                text += 'Boyut : {}\n'.format(progress['size'])
-                text += 'Süre : {}\n'.format(progress['time'])
-                text += 'Hız : {}\n'.format(progress['speed'])
+                text = 'İLERLEME💯\n'
+                text += 'Boyut👀 : {}\n'.format(progress['size'])
+                text += 'Süre⌛ : {}\n'.format(progress['time'])
+                text += 'Hız🚀 : {}\n'.format(progress['speed'])
 
                 if round(diff % 5)==0:
                     try:
@@ -225,7 +225,7 @@ async def echo(bot, update):
         )
         return False
     if t_response:
-        await send_message.edit_text("Formatlar Ayıklanıyor...")
+        await send_message.edit_text("Formatlar Ayıklanıyor...🤖")
         # LOGGER.info(t_response)
         x_reponse = t_response
         response_json = []
@@ -345,7 +345,7 @@ async def echo(bot, update):
                     ]
                 )
             break
-        inline_keyboard.append([InlineKeyboardButton("♨ İptal et", callback_data='close')])
+        inline_keyboard.append([InlineKeyboardButton("❌ İptal et ❌", callback_data='close')])
         reply_markup = InlineKeyboardMarkup(inline_keyboard)
     else:
         # fallback for nonnumeric port a.k.a seedbox.io
@@ -357,7 +357,7 @@ async def echo(bot, update):
                 callback_data=(cb_string_video).encode("UTF-8")
             )
         ])
-        inline_keyboard.append([InlineKeyboardButton("♨ İptal et", callback_data='close')])
+        inline_keyboard.append([InlineKeyboardButton("❌ İptal et ❌", callback_data='close')])
         reply_markup = InlineKeyboardMarkup(inline_keyboard)
         # LOGGER.info(reply_markup)
     thumbnail = DEF_THUMB_NAIL_VID_S
