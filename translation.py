@@ -1,7 +1,7 @@
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 class Translation(object):
-    START_TEXT = """Merhaba 🙋🏻{},\n
+    START_TEXT = """Selam dostum 🙋🏻{},\n
 Ben bir URL Yükleyicisiyim!
 Bu Botu kullanarak Tiktok Youtube ve İnstagram bağlantılarını yükleyebilirsiniz!"""
     FORCE_TXT = """
